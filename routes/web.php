@@ -315,7 +315,7 @@ Route::prefix('/login')->name('login')->group(function () {
     Route::get('/facebook/callback', [LoginController::class, 'facebook_callback'])->name('facebook_callback');
 
     // google
-    Route::get('/google', [LoginController::class, 'google'])->name('.google');
+    Route::get('/login-google', [LoginController::class, 'google'])->name('.google');
     Route::get('/google/callback', [LoginController::class, 'google_callback'])->name('google_callback');
 
 });
