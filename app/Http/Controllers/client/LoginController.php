@@ -107,6 +107,7 @@ class LoginController extends Controller
 
     // login google 
     public function google() {
+        return 'hanh handsome';
         return Socialite::driver('google')->redirect();
     }
     public function google_callback(Request $request) {
